@@ -1,4 +1,7 @@
+import numpy as np
+
 """ Check the CRC polynom. Returns 1 if the CRC is correct and 0 otherwise """
+
 def crc_decode(data,poly):
     data2 = np.copy(data)       # Copy of working vector 
     lenR  = len(data);           # length of the received codeword

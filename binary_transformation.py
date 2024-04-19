@@ -1,5 +1,9 @@
+import math
+import numpy as np
+
 """ Apply the Cesar transformation to the ASCII input to perform (trivial) decoding 
 """ 
+
 def cesarDecode(userIdent,messEnc): 
     cesarKey = getCesarKey(userIdent)
     mess = []

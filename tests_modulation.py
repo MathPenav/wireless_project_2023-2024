@@ -1,3 +1,6 @@
+import numpy as np
+
+
 def test_bpsk():
     # BPSK decoding test
     assert bpsk_demod(np.array([1.0+1j*0.0,1.0+1j*0.0,1.0+1j*0.0,-1.0+1j*0.0])) == [1, 1, 1, 0]
